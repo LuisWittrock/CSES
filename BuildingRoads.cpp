@@ -1,7 +1,8 @@
+//link to problem: https://cses.fi/problemset/task/1666/
+
 #include <iostream>
 #include <vector>
 
-//link to problem: https://cses.fi/problemset/task/1666/
 
 using namespace std;
 
