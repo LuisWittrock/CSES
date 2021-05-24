@@ -8,7 +8,7 @@ using namespace std;
 
 const int MAX = 1e5+10;
 
-int n,m; //amount of computers, amount of connections
+int n,m; //amount of computers, amount of connections.
 vector<int> connection[MAX]; //adjacency list
 bool visited[MAX]; //keep track of already visited nodes
 int parentNode[MAX]; //this will save the previous/parent node to every node[n]
