@@ -43,6 +43,7 @@ int main()
         cin >> a >> b;
         queries.push_back(make_pair(a, b));
     }
+
     priority_queue<pair<int, int>> q;
     for(auto route:queries)
     {
@@ -81,5 +82,6 @@ int main()
         }
         if(dist[route.second] != 1061109567) cout << dist[route.second] << endl;
         else cout << -1 << endl;
+        
     }
 }
