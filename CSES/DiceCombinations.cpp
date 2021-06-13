@@ -14,12 +14,18 @@ int main()
     ll n;
     cin >> n;
     vector<ll> dp(n+1, 0);
+    vector<int> dice;
+
+    for(int i = 1; i<=6; i++)
+    {
+        dice.push_back(i);
+    }
 
     dp[0] = 1;
 
     for(ll i = 0; i<=n; i++)
     {
-        for(ll j = 1; j<=6; j++)
+        for(auto j:dice)
         {
             if(i-j >= 0) dp[i] = (dp[i] + dp[i-j]) % NUM;
         }
