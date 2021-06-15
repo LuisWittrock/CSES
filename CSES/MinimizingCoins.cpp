@@ -27,7 +27,7 @@ int main()
     {
         for(int j = 0; j<n; j++)
         {
-            if(i-coins[j] >= 0) dp[i] = min(dp[i], dp[i-coins[j]]+1);
+            if(i-coins[j] >= 0) dp[i] = min(dp[i], dp[i-coins[j]]+1); //go back coins[j] in dp to see how we formed this sum and add one since we can use the coin by whose amount we were backtracking to form the new sum dp[i]
         }
     }
     if(dp[x] == INF) cout << -1;
